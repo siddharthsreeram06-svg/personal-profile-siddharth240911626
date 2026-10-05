@@ -1,0 +1,89 @@
+/* External CSS: element, class, descendant and pseudo-class selectors. */
+* { box-sizing: border-box; }
+html { font-size: 100%; }
+body { margin: 0; background-color: #f7f5ef; color: #202e40; font-family: Arial, Helvetica, sans-serif; line-height: 1.7; }
+a { color: inherit; }
+a:hover { color: #8a491f; }
+a:focus-visible { outline: 3px solid #ae632f; outline-offset: 5px; }
+.container { width: 88%; max-width: 1120px; margin: 0 auto; }
+.clearfix::after { content: ""; display: table; clear: both; }
+.site-header { border-bottom: 1px solid #dcded9; }
+.header-inner { padding: 20px 0; }
+.logo { display: inline-block; font: bold 1.9rem Georgia, serif; text-decoration: none; width: 15%; }
+.logo span { color: #9b5428; }
+nav { display: inline-block; width: 84%; text-align: right; }
+nav ul { list-style-type: none; padding: 0; margin: 0; }
+nav li { display: inline-block; margin-left: 23px; }
+nav a { font-size: .85rem; text-decoration: none; padding: 8px 0; }
+nav a:hover { border-bottom: 1px solid #9b5428; }
+.skip-link { position: absolute; left: 12px; top: -100px; padding: 10px; background: white; z-index: 2; }
+.skip-link:focus { top: 12px; }
+.hero { padding: 76px 0 68px; }
+.hero-copy { width: 100%; max-width: 850px; padding-top: 20px; }
+.eyebrow { color: #82502e; font-size: .7rem; font-weight: bold; letter-spacing: .16em; margin: 0 0 23px; }
+h1, h2 { font-family: Georgia, 'Times New Roman', serif; font-weight: normal; letter-spacing: -.04em; line-height: 1.12; margin: 0 0 24px; }
+h1 { font-size: 3.7rem; }
+h1 em { color: #8a491f; font-weight: normal; }
+h2 { font-size: 2.7rem; }
+h3 { font-size: 1.15rem; line-height: 1.4; margin: 12px 0; }
+p { margin: 0 0 18px; }
+.intro { max-width: 650px; color: #52606a; font-size: 1.05rem; }
+.intro strong { color: #202e40; }
+.button { display: inline-block; padding: 13px 22px; background: #202e40; color: #fff; text-decoration: none; font-size: .85rem; border: 1px solid #202e40; border-radius: 4px; }
+.button:hover { background: #354963; color: #fff; }
+.button span { margin-left: 18px; }
+.text-link { display: inline-block; margin: 16px 0 0 24px; font-size: .85rem; text-underline-offset: 5px; }
+.hero-note { margin: 35px 0 0; font-size: .62rem; color: #626965; letter-spacing: .15em; }
+.section { padding: 55px 0; border-top: 1px solid #d4d8d3; }
+.section-label { float: left; width: 36%; padding-right: 28px; }
+.section-content { float: right; width: 61%; }
+.section-content p { color: #52606a; }
+.section-content .lead { font-size: 1.25rem; color: #202e40; }
+.education-card { padding: 28px; border: 1px solid #d3d7ce; border-radius: 6px; background: #eeeee5; }
+.tag { font-size: .65rem; letter-spacing: .09em; color: #465e46; }
+.education-card h3 { font: normal 1.6rem Georgia, serif; }
+.education-card p:last-child { margin-bottom: 0; }
+.institution { font-weight: bold; }
+hr { border: 0; border-top: 1px solid #d3d7ce; margin: 23px 0; }
+.cards { list-style: none; padding: 0; margin: 30px 0 0; font-size: 0; }
+.card { display: inline-block; vertical-align: top; width: 32%; margin-right: 2%; padding: 26px; border: 1px solid #d3d7ce; border-radius: 6px; font-size: 1rem; }
+.card:last-child { margin-right: 0; }
+.card-number { color: #82502e; font: italic 1.3rem Georgia, serif; }
+.card p { color: #52606a; font-size: .9rem; }
+.skill-label { font-size: .6rem; letter-spacing: .12em; color: #82502e; }
+.interest-list { list-style: none; padding: 0; margin: 0; }
+.interest-list li { padding: 20px 0; border-bottom: 1px solid #d4d8d3; }
+.interest-list li:first-child { padding-top: 0; }
+.interest-list li:last-child { border-bottom: 0; }
+.interest-list li > span { display: inline-block; width: 9%; vertical-align: top; color: #82502e; font-size: .75rem; padding-top: 5px; }
+.interest-list li > div { display: inline-block; width: 89%; }
+.interest-list h3 { margin: 0 0 6px; }
+.interest-list p { margin: 0; }
+.contact { background: #202e40; color: #f7f5ef; padding: 48px; border-radius: 8px; margin: 5px 0 40px; }
+.contact .eyebrow { color: #e2b98a; }
+.contact p { max-width: 490px; }
+.light-button { background: #f7f5ef; color: #202e40; border-color: #f7f5ef; margin-top: 8px; }
+.light-button:hover { background: #e2b98a; color: #202e40; }
+footer { padding: 0 0 26px; color: #52606a; font-size: .75rem; }
+footer p { float: left; }
+footer p span { margin-left: 20px; }
+footer > a { float: right; text-underline-offset: 4px; }
+/* Small responsive extension: stack the floated columns on narrow screens. */
+@media (max-width: 760px) {
+  .container { width: 88%; }
+  .logo { width: 100%; }
+  nav { width: 100%; text-align: left; margin-top: 12px; }
+  nav li { margin: 0 15px 6px 0; }
+  nav a { font-size: .8rem; }
+  .hero { padding: 35px 0; }
+  .hero-copy { width: 100%; padding: 0; }
+  h1 { font-size: 2.65rem; }
+  h2 { font-size: 2.2rem; }
+  .section { padding: 36px 0; }
+  .section-label, .section-content { float: none; width: 100%; padding: 0; }
+  .card { display: block; width: 100%; margin: 0 0 14px; }
+  .contact { padding: 28px; }
+  footer p, footer > a { float: none; }
+  footer p span { display: block; margin: 8px 0 0; }
+}
+@media (max-width: 360px) { .text-link { margin-left: 0; display: block; } }
